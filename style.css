@@ -37,6 +37,12 @@ body {
     text-align: center !important;
     image-align: center;
   }
+
+  /* Create border for just the game parts */
+  .game {
+      border: 2px groove purple;
+      background-color: rgb(139,0,139,0.8);
+  }
   
   /*Create style for footer so that it is smaller than the rest of the web page*/
   footer {

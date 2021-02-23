@@ -44,64 +44,66 @@
   
     </div>
 
-    <!-- Game header -->
-    <div id="letsPlay" class="center-align"> <!-- Use class targetting to centrally align the subtitle and image only -->
-  
-      <h3>Let's play!</h3>
-      <!-- Image taken from ClipArt gallery and uploaded to my imgur, available to reuse -->
-      <img src="https://i.imgur.com/wBJ6lNy.png" class="picture">
-  
-    </div>
+    <section class="game">
+        <!-- Game header -->
+        <div id="letsPlay" class="center-align"> <!-- Use class targetting to centrally align the subtitle and image only -->
+    
+        <h3>Let's play!</h3>
+        <!-- Image taken from ClipArt gallery and uploaded to my imgur, available to reuse -->
+        <img src="https://i.imgur.com/wBJ6lNy.png" class="picture">
+    
+        </div>
 
-    <!-- Start of game -->
-    <div id="gameStart">  
-  
-      <p> When you are ready, type your name in the provided field to start the game.</p>
-      <!-- Form with submit button, allowing player to enter their name -->
-      <form name="playerName">
-        <input type="text" id="playerName" placeholder="Enter your name">
-        <!-- Include Submit button that displays the user's name and a welcome message once clicked -->
-        <input type="button" value="Submit" onClick="displayName(); showAndHide('showButton')">
-      </form>
-  
-      <p><span id = "begin_game"></span> </p>
-  
-      <!-- Include button that displays the three truth/statements when clicked, and remains hidden until user submits their name -->
-      <input id="showButton" style="display: none" type="button" value="Show Statements" onClick="showAndHide('statements')">
-  
-    </div>
+        <!-- Start of game -->
+        <div id="gameStart">  
+    
+        <p> When you are ready, type your name in the provided field to start the game.</p>
+        <!-- Form with submit button, allowing player to enter their name -->
+        <form name="playerName">
+            <input type="text" id="playerName" placeholder="Enter your name">
+            <!-- Include Submit button that displays the user's name and a welcome message once clicked -->
+            <input type="button" value="Submit" onClick="displayName(); showAndHide('showButton')">
+        </form>
+    
+        <p><span id = "begin_game"></span> </p>
+    
+        <!-- Include button that displays the three truth/statements when clicked, and remains hidden until user submits their name -->
+        <input id="showButton" style="display: none" type="button" value="Show Statements" onClick="showAndHide('statements')">
+    
+        </div>
 
-    <!-- List of true/false statements -->
-    <div id="statements" style="display: none">
-      <!-- Create radio buttons nested inside an ordered list of truth/false statements-->
-      <ol>
-        <li>
-          <label for="statementOne">
-            <!-- Create game response when radio button is selected and repeat for all options -->
-            <input id="statementOne" type="radio" name="statementList" onClick="answerCheck()">I have seven older siblings.
-          </label>
-        </li>
-        <li>
-          <label for="statementTwo">
-            <input id="statementTwo" type="radio" name="statementList" onClick="answerCheck()">The most recent snooker cue I purchased was more expensive than my current mobile phone.
-          </label>
-        </li>
-        <li>
-          <label for="statementThree">
-            <input id="statementThree" type="radio" name="statementList" onClick=" answerCheck()">I once performed live on the X Factor.
-          </label>
-        </li>
-      </ol>
+        <!-- List of true/false statements -->
+        <div id="statements" style="display: none">
+        <!-- Create radio buttons nested inside an ordered list of truth/false statements-->
+        <ol>
+            <li>
+            <label for="statementOne">
+                <!-- Create game response when radio button is selected and repeat for all options -->
+                <input id="statementOne" type="radio" name="statementList" onClick="answerCheck()">I have seven older siblings.
+            </label>
+            </li>
+            <li>
+            <label for="statementTwo">
+                <input id="statementTwo" type="radio" name="statementList" onClick="answerCheck()">The most recent snooker cue I purchased was more expensive than my current mobile phone.
+            </label>
+            </li>
+            <li>
+            <label for="statementThree">
+                <input id="statementThree" type="radio" name="statementList" onClick=" answerCheck()">I once performed live on the X Factor.
+            </label>
+            </li>
+        </ol>
 
-    </div>
+        </div>
 
-    <!-- Define game responses to mouse clicks and keep this hidden initially -->
-    <div id="gameResponses">   
-  
-      <p><span id = "correct" style="display: none">Congratulations, that is the correct answer! <!-- Include a line break followed by link to funny video --><br><a href="https://www.youtube.com/watch?v=TRmLgIdA7i8" style="font-size:10px">P.S. Click here for a link to the X factor performance ... you'll want to skip to 1:09 and look out for the lanky idiot on the right hand side.</a></span></p>
-      <p><span id = "incorrect" style="display: none">Bad luck, that is not the correct answer.  :(   Try again by clicking another option!</span></p>
-  
-    </div>
+        <!-- Define game responses to mouse clicks and keep this hidden initially -->
+        <div id="gameResponses">   
+    
+        <p><span id = "correct" style="display: none">Congratulations, that is the correct answer! <!-- Include a line break followed by link to funny video --><br><a href="https://www.youtube.com/watch?v=TRmLgIdA7i8" style="font-size:10px">P.S. Click here for a link to the X factor performance ... you'll want to skip to 1:09 and look out for the lanky idiot on the right hand side.</a></span></p>
+        <p><span id = "incorrect" style="display: none">Bad luck, that is not the correct answer.  :(   Try again by clicking another option!</span></p>
+    
+        </div>
+    </section>
 
     <!-- Create footer that includes link to top of page and a copyright statement -->
     <div id="footer">
