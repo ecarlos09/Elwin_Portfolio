@@ -1,12 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elwin's portfolio</title>
-</head>
-<body>
-    <h1>Work in progress!</h1>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- Import Google font -->
+    <div id="googleFonts">
+      <!-- Preemptively connect to google font source -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <!-- Import font style -->
+      <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    </div>
+
+    <!-- Create introductory section consisting of page header and image -->
+    <div id="welcome">
+      <header>
+      <!-- Use negative number for top margin to decrease amount of space at the top of the page -->
+      <h1 style="margin: -30px 0px 0px 0px;">HOWDY!</h1>
+      <!-- Include image with hyperlink to linkedIn page -->
+      <a href="https://www.linkedin.com/in/elwin-carlos-98a603146/">
+      <img class="picture" style="border-radius: 50%;" src="https://i.imgur.com/WGS6L73.jpg" alt="Willy Wonka costume plus link to linkedIn">
+      </a>
+      </header>
+    </div>
+
+    <!-- Introductory text -->
+    <div id="intro">
+      <p>Welcome!  My name is Elwin and I am a coding enthusiast.  I haven't been doing this for very long so what you are viewing is one of my first attempts at creating a web page!</p>
+      <p>There is only so much I can tell you about myself here, but if you want to get to know me better, there is a fun little game that you can play below.  Alternatively, you can click on the image above, which will take you to my linkedIn page.</p>
+    </div>
+
+    <!-- Game instructions -->
+    <div id="instructions">
+  
+      <h2>Two truths and a lie</h2>
+  
+      <p>The following is a well-known icebreaker.  If you already know the rules, then you can just <a href="#letsPlay">jump to the game!</a></p>
+    
+      <p>If you've not heard of this game before, the instructions are fairly simple.  After you've entered your name in the form below, three statements will appear.  Two of these are true facts about me, while the other is be a complete lie.  Your task is to figure out which of the three statements is false.</p>
+  
+    </div>
+
+    <!-- Game header -->
+    <div id="letsPlay" class="center-align"> <!-- Use class targetting to centrally align the subtitle and image only -->
+  
+      <h3>Let's play!</h3>
+      <!-- Image taken from ClipArt gallery and uploaded to my imgur, available to reuse -->
+      <img src="https://i.imgur.com/wBJ6lNy.png" class="picture">
+  
+    </div>
+
+    <!-- Start of game -->
+    <div id="gameStart">  
+  
+      <p> When you are ready, type your name in the provided field to start the game.</p>
+      <!-- Form with submit button, allowing player to enter their name -->
+      <form name="playerName">
+        <input type="text" id="playerName" placeholder="Enter your name">
+        <!-- Include Submit button that displays the user's name and a welcome message once clicked -->
+        <input type="button" value="Submit" onClick="displayName(); showAndHide('showButton')">
+      </form>
+  
+      <p><span id = "begin_game"></span> </p>
+  
+      <!-- Include button that displays the three truth/statements when clicked, and remains hidden until user submits their name -->
+      <input id="showButton" style="display: none" type="button" value="Show Statements" onClick="showAndHide('statements')">
+  
+    </div>
+
+    <!-- List of true/false statements -->
+    <div id="statements" style="display: none">
+      <!-- Create radio buttons nested inside an ordered list of truth/false statements-->
+      <ol>
+        <li>
+          <label for="statementOne">
+            <!-- Create game response when radio button is selected and repeat for all options -->
+            <input id="statementOne" type="radio" name="statementList" onClick="answerCheck()">I have seven older siblings.
+          </label>
+        </li>
+        <li>
+          <label for="statementTwo">
+            <input id="statementTwo" type="radio" name="statementList" onClick="answerCheck()">The most recent snooker cue I purchased was more expensive than my current mobile phone.
+          </label>
+        </li>
+        <li>
+          <label for="statementThree">
+            <input id="statementThree" type="radio" name="statementList" onClick=" answerCheck()">I once performed live on the X Factor.
+          </label>
+        </li>
+      </ol>
+
+    </div>
+
+    <!-- Define game responses to mouse clicks and keep this hidden initially -->
+    <div id="gameResponses">   
+  
+      <p><span id = "correct" style="display: none">Congratulations, that is the correct answer! <!-- Include a line break followed by link to funny video --><br><a href="https://www.youtube.com/watch?v=TRmLgIdA7i8" style="font-size:10px">P.S. Click here for a link to the X factor performance ... you'll want to skip to 1:09 and look out for the lanky idiot on the right hand side.</a></span></p>
+      <p><span id = "incorrect" style="display: none">Bad luck, that is not the correct answer.  :(   Try again by clicking another option!</span></p>
+  
+    </div>
+
+    <!-- Create footer that includes link to top of page and a copyright statement -->
+    <div id="footer">
+      <footer class="center-align">
+        <a href="#welcome" class="center-align">
+        Back to top
+      </a><br><br>
+        Copyright Elwin Carlos 2020
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
