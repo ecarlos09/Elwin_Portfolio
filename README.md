@@ -4,4 +4,6 @@ Checkout my portfolio website!
 
 https://elwin-portfolio.netlify.app/
 
-N.B. I now have a second dev branch, called dev2 (25.02.2021)
+## Update 15.04.2021
+
+I am currently in the process of converting this vanilla site into a REACT app ... significant changes will be deployed and commented on in this README.  Stay tuned!
