@@ -35,7 +35,6 @@ body {
   /* Create alignment class that places text and images in the centre of the screen */
   .center-align {
     text-align: center !important;
-    image-align: center;
   }
 
   /* Create border for just the game parts */

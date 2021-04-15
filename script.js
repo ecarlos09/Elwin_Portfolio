@@ -1,10 +1,8 @@
 //Declare function that displays welcome message when user is ready to play
-//Assign to a constant variable called displayName
 const displayName = () => {
     //Target user input and store to variable
     let name = document.getElementById("playerName").value;
     //Display a personalised welcome message when the user submits their name
-    //Use string interpolation to access the name variable inside the string
     begin_game.innerHTML = `Welcome ${name}!  Click "Show Statements" to view my three statements.  Select the one that you think is false.  If you are correct, there might be a little reward (or punishment) waiting for you ...  Good luck!`;
   }
   

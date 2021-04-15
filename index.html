@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width">
     <title>Elwin Carlos</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="canvas.css" rel="stylesheet" type="text/css" />
     <link rel="icon" href="my_face_2.jpg" />
-  </head>
-  <body>
     <!-- Import Google font -->
     <div id="googleFonts">
       <!-- Preemptively connect to google font source -->
@@ -15,6 +14,15 @@
       <!-- Import font style -->
       <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
     </div>
+  </head>
+  <body>
+    
+    <!-- Create a canvas! -->
+    <section id="testCanvas">
+      <canvas id="myCanvas" width="100vw" style="width: 100vw">
+        <img src="sea-background.jpg" alt="the sea" />
+      </canvas>
+    </section>
 
     <!-- Create introductory section consisting of page header and image -->
     <div id="welcome">
@@ -23,7 +31,7 @@
       <h1 style="margin: -30px 0px 0px 0px;">Welcome to my site!</h1>
       <!-- Include image with hyperlink to linkedIn page -->
       <a href="https://www.linkedin.com/in/elwin-carlos-98a603146/">
-      <img class="picture" style="border-radius: 50%;" src="https://i.imgur.com/WGS6L73.jpg" alt="Willy Wonka costume plus link to linkedIn">
+      <img class="picture" style="border-radius: 50%;" src="elly-wonka.jpg" alt="Elwin dressed as Willy Wonka; photo links to linkedIn page">
       </a>
       </header>
     </div>
@@ -117,5 +125,6 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="canvas.js"></script>
   </body>
 </html>
