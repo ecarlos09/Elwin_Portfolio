@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 const Home = () => {
+
+    const mainStart = useRef();
+
     return (
-        <h1>Welcome to my site!</h1>
+        <h1 ref={mainStart}>Welcome to my site!</h1>
     );
 };
 
