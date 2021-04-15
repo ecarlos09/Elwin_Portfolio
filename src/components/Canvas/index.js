@@ -2,8 +2,8 @@ import React from 'react';
 
 const Canvas = () => {
     return (
-        <canvas>
-            
+        <canvas id="myCanvas">
+
         </canvas>
     )
 }
