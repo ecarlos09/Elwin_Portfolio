@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 
+import { Howdy } from '../../components';
+
 const Home = () => {
 
     const mainStart = useRef();
@@ -7,7 +9,10 @@ const Home = () => {
     // const handleStart = () => notesEnd.current.scrollIntoView({ behavior: "smooth" })
 
     return (
-        <h1 ref={mainStart}>Welcome to my site!</h1>
+        <section className="intro">
+            <h1 ref={mainStart}>Howdy!</h1>
+            <Howdy />
+        </section>        
     );
 };
 
