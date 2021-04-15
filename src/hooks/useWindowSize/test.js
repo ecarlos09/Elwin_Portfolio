@@ -7,7 +7,7 @@ describe('useWindowSize', () => {
         // Set desktop screen size
         global.window.innerWidth = 1024;
         global.window.innerHeight = 768;
-        const { result } = renderHook(() => {useWindowSize()});
+        const { result } = renderHook(() => useWindowSize());
         // Make assertion
         expect(result.current).toStrictEqual({ width: 1024, height: 768, mobile: false });
     });
@@ -16,7 +16,7 @@ describe('useWindowSize', () => {
         // Set mobile screen size
         global.window.innerWidth = 768;
         global.window.innerHeight = 1024;
-        const { result } = renderHook(() => {useWindowSize()});
+        const { result } = renderHook( () => useWindowSize() );
         // Make assertion
         expect(result.current).toStrictEqual({ width: 768, height: 1024, mobile: true });
     });
