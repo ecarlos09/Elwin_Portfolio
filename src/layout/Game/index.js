@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { PlayIcon } from '../../components'
+
 const Game = () => {
     return (
         <>
@@ -16,6 +18,8 @@ const Game = () => {
                 Two of these are true facts about me, while the other is be a complete lie. 
                 Your task is to figure out which of the three statements is false.
             </p>
+
+            <PlayIcon />
         </>
     )
 }
