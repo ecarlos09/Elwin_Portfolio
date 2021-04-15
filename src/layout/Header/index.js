@@ -1,9 +1,11 @@
 import React from 'react';
 
+import { Canvas } from '../../components';
+
 const Header = () => {
     return (
         <header>
-            <h1>Welcome!  Let's get started</h1>
+            <Canvas />
         </header>
     );
 };
