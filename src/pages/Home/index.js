@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 
-import { Howdy } from '../../components';
+import { Howdy, Intro } from '../../components';
 
 const Home = () => {
 
@@ -12,6 +12,7 @@ const Home = () => {
         <section className="intro">
             <h1 ref={mainStart}>Howdy!</h1>
             <Howdy />
+            <Intro />            
         </section>        
     );
 };
