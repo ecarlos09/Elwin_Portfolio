@@ -1,0 +1,13 @@
+header {
+    display: flex;
+    justify-content: center;
+}
+
+#my-canvas {
+    position: absolute;
+}
+
+#start-button {
+    position: absolute;
+    align-self: center;
+}
