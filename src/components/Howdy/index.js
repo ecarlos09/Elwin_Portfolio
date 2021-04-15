@@ -4,7 +4,7 @@ import './style.css';
 
 const Howdy = () => {
     return (
-        <img src="https://i.imgur.com/WGS6L73.jpg" alt="Willy Wonka costume" />
+        <img id="howdy-img" src="https://i.imgur.com/WGS6L73.jpg" alt="Willy Wonka costume" />
     )
 }
 
