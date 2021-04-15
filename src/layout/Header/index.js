@@ -1,11 +1,12 @@
 import React from 'react';
 
-import { Canvas } from '../../components';
+import { Canvas, StartButton } from '../../components';
 
 const Header = () => {
     return (
         <header>
             <Canvas />
+            <StartButton />
         </header>
     );
 };
