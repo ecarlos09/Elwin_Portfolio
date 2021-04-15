@@ -39,7 +39,7 @@ const Canvas = () => {
     }, [draw])
 
     return (
-        <canvas id="myCanvas" width={useWindowSize().width} height={useWindowSize().height} ref={canvasRef}>
+        <canvas id="my-canvas" width={useWindowSize().width} height={useWindowSize().height} ref={canvasRef}>
         </canvas>
     )
 }
