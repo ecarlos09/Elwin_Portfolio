@@ -1,12 +1,13 @@
 import React from 'react';
 
-import { GithubStats } from '../../components'
+import { GithubStats, Projects } from '../../components'
 
 const Skills = () => {
     return (
         <>
             <h2>Technical Skills</h2>
             <GithubStats />
+            <Projects />
         </>
     )
 }
