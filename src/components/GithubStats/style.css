@@ -1,3 +1,9 @@
+.git-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .git-stats img {
-    width: 100vw;
+    width: 25vw;
 }
