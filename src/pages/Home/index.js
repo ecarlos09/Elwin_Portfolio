@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 
-import { Header, Skills, Game } from '../../layout';
+import { Header, Skills, Game, Contact } from '../../layout';
 import { Howdy, Intro } from '../../components';
 
 const Home = () => {
@@ -22,7 +22,8 @@ const Home = () => {
                 <Intro />            
             </section>
             <Skills />
-            <Game />    
+            <Game />
+            <Contact />    
         </>    
     );
 };
