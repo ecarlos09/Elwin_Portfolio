@@ -10,6 +10,7 @@ const Home = () => {
 
     return (
         <section className="intro">
+            <h1>N.B.  This page is still under construction ... come back later and perhaps it will be finished!</h1>
             <h1 ref={mainStart}>Howdy!</h1>
             <Howdy />
             <Intro />            
