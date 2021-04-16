@@ -10,7 +10,7 @@ const Canvas = () => {
     const draw = (ctx, c, frameCount) => {
         // Define grid
         const grd = ctx.createLinearGradient(0, 0, Math.sin(frameCount*0.05)*c.width, (1-Math.sin(frameCount*0.05))*c.height);
-        grd.addColorStop(0, "rgb(255,255,153)");
+        grd.addColorStop(0, "#FFFFCC");
         grd.addColorStop(1, "pink");
         // Fill gradient
         ctx.fillStyle = grd;
@@ -39,7 +39,7 @@ const Canvas = () => {
     }, [draw])
 
     return (
-        <canvas id="my-canvas" width={useWindowSize().width} height={useWindowSize().height} ref={canvasRef}>
+        <canvas id="my-canvas" width={useWindowSize().width} height={useWindowSize().height} ref={canvasRef} style={{borderRadius: "2%"}}>
         </canvas>
     )
 }
