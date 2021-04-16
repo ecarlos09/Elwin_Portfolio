@@ -1,0 +1,27 @@
+.projects {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+.projects img {
+    width: 40vw;
+}
+
+.project-1 {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.project-2 {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.project-3 {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
