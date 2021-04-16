@@ -35,8 +35,8 @@ const config = {
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' }, // transpile JavaScript files
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-      }, // transpile css files
+        use: ['style-loader', 'css-loader', 'file-loader'],
+      }, // transpile css files and images
       {
         test: /\.(png|svg|jpg|gif|pdf)$/,
         use: ['file-loader'],
