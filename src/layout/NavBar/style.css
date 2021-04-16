@@ -1,0 +1,42 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    justify-self: center;
+    width: 100vw;
+    background-color: rgb(255, 192, 203, 0.7);
+    -webkit-backdrop-filter: blur(15px);
+	backdrop-filter: blur(15px);
+    border-radius: 15%;
+    justify-content: space-around;
+    margin: 0.5rem;
+}
+
+nav .links{
+    display: flex;
+    justify-content: space-around;
+    margin: 0.5rem;
+}
+
+nav .history {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    background-color: whitesmoke;
+}
+
+a:hover {
+    color:pink;
+    background-color: grey;
+}
+
+.current {
+    color: white;
+    font-weight: bolder;
+    background-color:black;
+}
