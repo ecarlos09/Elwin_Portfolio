@@ -1,4 +1,5 @@
 body {
+    width: 100vw;
     background-color: #FFFFCC; /* Hex code for pale yellow */
     color: hotpink;
     text-align: justify; /* Keep outer edges of text neat and consistent */
@@ -16,34 +17,43 @@ h1 {
  /* Ensure paragraph elements are consistently spaced out */
  p {
     padding: 20px, 5px, 20px, 5px;
-    margin: 20px 10px 20px 10px;
-  }
+}
   
-  /*Create a picture class that allows for easy adjustment of picture sizes*/
-  .picture {
-      width: 30%;
-  }
+/*Create a picture class that allows for easy adjustment of picture sizes*/
+.picture {
+    width: 30%;
+}
   
-  /* Create a media query that adjusts the width of the image based on the size of the screen reader N.B.  Have not had time to apply this to the entire header yet but this is something I would like to do eventually*/
-  @media screen and (max-width: 768px) {
-      .picture {
-          width: 70%;	
-      }
-  }
+/* Create a media query that adjusts the width of the image based on the size of the screen reader N.B.  Have not had time to apply this to the entire header yet but this is something I would like to do eventually*/
+@media screen and (max-width: 768px) {
+    .picture {
+        width: 70%;	
+    }
+}
   
-  /* Create alignment class that places text and images in the centre of the screen */
-  .center-align {
-    text-align: center !important;
-  }
+/* Create alignment class that places text and images in the centre of the screen */
+.center-align {
+text-align: center !important;
+}
 
-  /* Create border for just the game parts */
-  .game {
-      border: 2px groove purple;
-      background-color: rgb(139,0,139,0.8);
-  }
+/* Create border for just the game parts */
+.game {
+    border: 2px groove purple;
+    background-color: rgb(139,0,139,0.8);
+}
   
-  /*Create style for footer so that it is smaller than the rest of the web page*/
-  footer {
+/*Create style for footer so that it is smaller than the rest of the web page*/
+footer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    left: 0;
+    background-color: rgb(128, 128, 128, 0.7);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    color: white;      
     font-size: 14px;
-    margin: 20px 20px 20px 20px
-  }
+    margin-top: 1rem;  
+}
