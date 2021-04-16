@@ -1,0 +1,7 @@
+.about {
+    width: 95vw;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: space-around;
+}
