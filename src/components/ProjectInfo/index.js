@@ -8,7 +8,6 @@ import choosic from '../../assets/choosic.jpg';
 const ProjectInfo = () => {
     return (
         <section className="projects">
-            <h3>Projects</h3>
             <div className="projects-list">
                 <div className="project-1">
                     <img src={consoulLogLanding} alt="Landing page for consoul.log"/>
