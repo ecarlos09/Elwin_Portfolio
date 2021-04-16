@@ -13,6 +13,9 @@ const Projects = () => {
                 <div className="project-1">
                     <img src={consoulLogLanding} alt="Landing page for consoul.log"/>
                     <img src={consoulLogFeed} alt="Exampe feed for consoul.log"/>
+                    <a href="https://consoul-log.netlify.app/">
+                        <i class="fab fa-chrome"></i>
+                    </a>
                     <a href="https://github.com/ecarlos09/consoul-log">
                         <i className="fab fa-github"></i>
                     </a>
@@ -20,14 +23,20 @@ const Projects = () => {
 
                 <div className="project-2">
                     <img src={habite}/>
-                    <a>
+                    <a href="https://habite.netlify.app/">
+                        <i class="fab fa-chrome"></i>
+                    </a>
+                    <a href="https://github.com/ecarlos09/co-habiters">
                         <i className="fab fa-github"></i>
                     </a>
                 </div>
 
                 <div className="project-3">
                     <img src={choosic} />
-                    <a>
+                    <a href="https://choosic-music.netlify.app/">
+                        <i class="fab fa-chrome"></i>
+                    </a>
+                    <a href="https://github.com/ecarlos09/ee-music-app">
                         <i className="fab fa-github"></i>
                     </a>
                 </div>
