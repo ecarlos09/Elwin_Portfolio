@@ -14,10 +14,10 @@ h1 {
     color: rgb(139,0,139); /* rgb code for a shade of purple, can't remember which one! */
 }
 
- /* Ensure paragraph elements are consistently spaced out */
+ /* Ensure paragraph elements are consistently spaced out
  p {
     padding: 20px, 5px, 20px, 5px;
-}
+} */
   
 /*Create a picture class that allows for easy adjustment of picture sizes*/
 .picture {

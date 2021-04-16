@@ -1,7 +1,19 @@
+.git-stats-content {
+    display: flex;
+    justify-content: space-around;
+}
+
 .git-stats {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+}
+
+/* .git-stats-blurb p {
+    width: 70vw;
+} */
+
+.git-stats h2 {
+    text-align: center;
 }
 
 .git-stats img {
