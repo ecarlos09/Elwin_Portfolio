@@ -5,7 +5,7 @@ import { ProjectInfo } from '../../components'
 const Projects = () => {
     return (
         <>
-            <h2>Check out some of my most recent work!</h2>
+            <h1>Check out some of my most recent work!</h1>
             <ProjectInfo />
         </>
     )
