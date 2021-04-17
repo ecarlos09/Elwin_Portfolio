@@ -2,9 +2,9 @@ body {
     width: 100vw;
     background-color: #FFFFCC; /* Hex code for pale yellow */
     color: hotpink;
-    text-align: justify; /* Keep outer edges of text neat and consistent */
+    text-align: justify;
     font-size: 20px;
-    font-family: cursive; /* Set default font style for body */
+    font-family: 'RocknRoll One', sans-serif; /* Set default font style for body */
 }
 
 h1 {
@@ -12,6 +12,10 @@ h1 {
     font-size: 60px; /* Ensure main title is significantly larger than remainder of text */
     font-family: 'Nerko One', cursive; /* Use imported Goggle font for header, with a default style included in case browser does not support it */
     color: rgb(139,0,139); /* rgb code for a shade of purple, can't remember which one! */
+}
+
+h2, h3 {
+    text-align: center;
 }
 
  /* Ensure paragraph elements are consistently spaced out
