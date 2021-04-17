@@ -4,7 +4,7 @@ body {
     color: hotpink;
     text-align: justify; /* Keep outer edges of text neat and consistent */
     font-size: 20px;
-    font-family: cursive; /* Set default font style for body */
+    font-family: 'RocknRoll One', sans-serif; /* Set default font style for body */
 }
 
 h1 {
