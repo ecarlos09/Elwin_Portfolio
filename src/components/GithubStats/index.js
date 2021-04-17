@@ -21,9 +21,14 @@ const GithubStats = () => {
                 <div id="git-stats-blurb">
                     <p>The infographics displayed are an overview of my current skill set and version control habits this year.</p>
                     <p>
-                        Other technical skills include:
+                        Other technical skills and achievements include:
                         <ul>
-                            <li>...</li>
+                            <li>Working knowledge of JavaScript frameworks, such as Express.js and React</li>
+                            <li>Completed OU course on Data Science with Python</li>
+                            <li>Completed introductory course on Ruby with Codecademy</li>                            
+                            <li>Proficient user of MS Word and Excel</li>
+                            <li>Working knowledge of Google and it's associatd web apps</li>
+                            <li>Beginner's knowledge of C++</li>
                         </ul>
                     </p>     
                     <p>
