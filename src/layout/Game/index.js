@@ -2,7 +2,7 @@ import React from 'react';
 
 import './style.css';
 
-import { PlayIcon, PlayerInfo } from '../../components'
+import { PlayIcon, PlayerInfo, Statements } from '../../components'
 
 const Game = () => {
     return (
@@ -24,6 +24,7 @@ const Game = () => {
             <div className="game-content" >
                 <PlayIcon />
                 <PlayerInfo />
+                <Statements />
             </div>
         </>
     )

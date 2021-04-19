@@ -6,3 +6,4 @@ export { default as GithubStats } from './GithubStats';
 export { default as ProjectInfo } from './ProjectInfo';
 export { default as PlayIcon } from './PlayIcon';
 export { default as PlayerInfo } from './PlayerInfo';
+export { default as Statements } from './Statements';
