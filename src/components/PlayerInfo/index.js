@@ -22,7 +22,8 @@ const PlayerInfo = () => {
     //     setNameInput(newPlayerName);
     // };
     
-    const handleNameSubmit = () => {
+    const handleNameSubmit = e => {
+        e.preventDefault();
         setPlayer(formData.username);
         setFormData({username: ""});
     }
