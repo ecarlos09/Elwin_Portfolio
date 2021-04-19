@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { PlayIcon } from '../../components'
+import './style.css';
+
+import { PlayIcon, PlayerInfo } from '../../components'
 
 const Game = () => {
     return (
@@ -19,7 +21,10 @@ const Game = () => {
                 Your task is to figure out which of the three statements is false.
             </p>
 
-            <PlayIcon />
+            <div className="game-content" >
+                <PlayIcon />
+                <PlayerInfo />
+            </div>
         </>
     )
 }
