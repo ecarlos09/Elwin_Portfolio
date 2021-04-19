@@ -8,13 +8,18 @@ import './style.css';
 const Home = () => {
 
     const mainStart = useRef();
+    const skills = useRef();
+    const game = useRef();
+    const contact = useRef();
 
-    // const handleStart = () => notesEnd.current.scrollIntoView({ behavior: "smooth" })
-
+    const handleStart = () => {
+        mainStart.current.scrollIntoView({ behavior: "smooth" })
+    }
+    
     return (
         <>
             <section className="canvas">
-                <Header />
+                <Header handleStart={handleStart} />
             </section>
 
             <section className="intro">
@@ -25,8 +30,12 @@ const Home = () => {
                     <Howdy />
                 </div>            
             </section>
+
+            <span ref={skills}></span>
             <Skills />
+            <span ref={game}></span>
             <Game />
+            <span ref={contact}></span>
             <Contact />    
         </>    
     );
