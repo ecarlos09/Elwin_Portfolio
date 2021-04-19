@@ -1,5 +1,5 @@
 const initState = {
-    players: [{id: 'default', playerName: 'stranger'}]
+    players: ['stranger']
 }
 
 const playerReducer =  (state=initState, action) => {
