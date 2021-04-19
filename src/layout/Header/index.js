@@ -6,12 +6,12 @@ import './style.css';
 
 import { Canvas, StartButton } from '../../components';
 
-const Header = () => {
+const Header = ({ handleStart }) => {
     return (
         <>
             <header style={{width: useWindowSize().width, height: useWindowSize().height}}>
                 <Canvas />
-                <StartButton />
+                <StartButton handleStart={handleStart}/>
             </header>
         </>
     );
