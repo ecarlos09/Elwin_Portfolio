@@ -4,5 +4,5 @@ export default fetchInit = () => ({
 
 export default addName = e => ({
     type: "ADD_NAME",
-    payload: {id: 'player', playerName: e.target.name}
+    payload: e.target.name
 })
