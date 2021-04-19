@@ -1,8 +1,8 @@
-import { createSore } from 'redux';
+import { createStore } from 'redux';
 import { devToolsEnhancer } from 'redux-devtools-extension';
 
 import playerReducer from './reducers/playerReducer';
 
-const store = createStore(doggosReducer, devToolsEnhancer());
+const store = createStore(playerReducer, devToolsEnhancer());
 
 export default store;
