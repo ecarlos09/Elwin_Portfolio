@@ -1,8 +1,4 @@
-export default fetchInit = () => ({
-    type: "FETCH_INIT"
-})
-
-export default addName = e => ({
+export const addName = e => ({
     type: "ADD_NAME",
-    payload: e.target.name
+    payload: e.target.value
 })
