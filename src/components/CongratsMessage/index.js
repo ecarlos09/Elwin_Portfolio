@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
+import './style.css';
+
 const CongratsMessage = ({visible}) => {
 
 

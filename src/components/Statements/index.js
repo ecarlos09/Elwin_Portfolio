@@ -26,33 +26,35 @@ const Statements = () => {
 
     return (
         <section className="statements" >
-            <form id="statementsList">
-                <Card>
-                    <Card.Body>
-                        <input id="statementOne" type="radio" name="statementList" onClick={handleCongrats} />
-                        <label htmlFor="statementOne">{statements[0].statement}</label>
-                    </Card.Body>
-                </Card>
+            <Card className="game">
+                <form id="statements-list">
+                    <Card>
+                        <Card.Body>
+                            <input id="statementOne" type="radio" name="statementList" onClick={handleCongrats} />
+                            <label htmlFor="statementOne">{statements[0].statement}</label>
+                        </Card.Body>
+                    </Card>
 
-                <Card>
-                    <Card.Body>
-                        <input id="statementTwo" type="radio" name="statementList" onClick={handleUnlucky} />
-                        <label htmlFor="statementTwo">{statements[1].statement}</label>
-                    </Card.Body>
-                </Card>
+                    <Card>
+                        <Card.Body>
+                            <input id="statementTwo" type="radio" name="statementList" onClick={handleUnlucky} />
+                            <label htmlFor="statementTwo">{statements[1].statement}</label>
+                        </Card.Body>
+                    </Card>
 
+                    <Card>
+                        <Card.Body>
+                            <input id="statementThree" type="radio" name="statementList" onClick={handleUnlucky} />
+                            <label htmlFor="statementThree">{statements[2].statement}</label>
+                        </Card.Body>
+                    </Card>
+                </form>
                 <Card>
-                    <Card.Body>
-                        <input id="statementThree" type="radio" name="statementList" onClick={handleUnlucky} />
-                        <label htmlFor="statementThree">{statements[2].statement}</label>
-                    </Card.Body>
+                    <div className="answer-message">
+                        <CongratsMessage visible={showCongrats}/>
+                        <UnluckyMessage visible={showUnlucky}/>
+                    </div>
                 </Card>
-            </form>
-            <Card>
-                <div className="answer-message">
-                    <CongratsMessage visible={showCongrats}/>
-                    <UnluckyMessage visible={showUnlucky}/>
-                </div>
             </Card>
         </section>
     )

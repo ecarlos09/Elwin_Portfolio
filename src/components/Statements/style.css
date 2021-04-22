@@ -1,0 +1,11 @@
+.statements {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.statements .game {
+    width: 80%;
+    margin: 10px 10px 10px 10px;
+    align-self: center;
+}
