@@ -27,3 +27,9 @@
     flex-flow: wrap;
     justify-content: center;
 }
+
+.card-text {
+    color: black;
+    text-align: center;
+    margin-top: 1rem;
+}

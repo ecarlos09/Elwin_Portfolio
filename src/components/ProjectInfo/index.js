@@ -21,6 +21,12 @@ const ProjectInfo = () => {
                     </Card.Header>
                     <Accordion.Collapse eventKey="0">
                         <Card.Body>
+                            <Card.Text className="card-text">
+                                Consoul.log is an anonymous journalling website for tech nerds.
+                            </Card.Text>
+                            <Card.Text className="card-text">
+                                Check out the website, or visit the Github repository for more info!
+                            </Card.Text>
                             <div id="project-1">
                                 <div className="project-img">
                                     <img src={consoulLogLanding} alt="Landing page for consoul.log"/>
@@ -47,6 +53,12 @@ const ProjectInfo = () => {
                     </Card.Header>
                     <Accordion.Collapse eventKey="1">
                         <Card.Body>
+                            <Card.Text className="card-text">
+                                Habite is a web app that helps you track any habits you wish to keep a record of.
+                            </Card.Text>
+                            <Card.Text className="card-text">
+                                Check out the website, or visit the Github repository for more info!
+                            </Card.Text>
                             <div className="project-2">
                                 <div className="project-img">
                                     <img src={habite}/>
@@ -67,11 +79,17 @@ const ProjectInfo = () => {
                 <Card>
                     <Card.Header>
                         <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                            ChoosicMusic
+                            Choosic Music
                         </Accordion.Toggle>
                     </Card.Header>
                     <Accordion.Collapse eventKey="2">
                         <Card.Body>
+                            <Card.Text className="card-text">
+                                Choosic Music is a cool place for you to listen to some great music!
+                            </Card.Text>
+                            <Card.Text className="card-text">
+                                Check out the website, or visit the Github repository for more info!
+                            </Card.Text>
                             <div className="project-3">
                                 <div className="project-img">
                                     <img src={choosic} />
