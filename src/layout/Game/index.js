@@ -12,10 +12,6 @@ const Game = () => {
 
             <p>
                 The following is a well-known icebreaker. 
-                If you already know the rules, then you can just jump to the game!
-            </p>
-
-            <p>
                 If you've not heard of this game before, the instructions are fairly simple. 
                 After you've entered your name in the form below, three statements will appear. 
                 Two of these are true facts about me, while the other is be a complete lie. 

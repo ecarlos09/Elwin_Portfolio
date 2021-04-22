@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
+import { Card } from 'react-bootstrap';
 import { CongratsMessage, UnluckyMessage } from '..';
+
+import './style.css';
 
 const Statements = () => {
     const [statements, setStatements] = useState([
@@ -24,17 +27,33 @@ const Statements = () => {
     return (
         <section className="statements" >
             <form id="statementsList">
-                <input id="statementOne" type="radio" name="statementList" onClick={handleCongrats} />
-                <label htmlFor="statementOne">{statements[0].statement}</label>
-                <input id="statementTwo" type="radio" name="statementList" onClick={handleUnlucky} />
-                <label htmlFor="statementTwo">{statements[1].statement}</label>
-                <input id="statementThree" type="radio" name="statementList" onClick={handleUnlucky} />
-                <label htmlFor="statementThree">{statements[2].statement}</label>
+                <Card>
+                    <Card.Body>
+                        <input id="statementOne" type="radio" name="statementList" onClick={handleCongrats} />
+                        <label htmlFor="statementOne">{statements[0].statement}</label>
+                    </Card.Body>
+                </Card>
+
+                <Card>
+                    <Card.Body>
+                        <input id="statementTwo" type="radio" name="statementList" onClick={handleUnlucky} />
+                        <label htmlFor="statementTwo">{statements[1].statement}</label>
+                    </Card.Body>
+                </Card>
+
+                <Card>
+                    <Card.Body>
+                        <input id="statementThree" type="radio" name="statementList" onClick={handleUnlucky} />
+                        <label htmlFor="statementThree">{statements[2].statement}</label>
+                    </Card.Body>
+                </Card>
             </form>
-            <div className="answer-message">
-                <CongratsMessage visible={showCongrats}/>
-                <UnluckyMessage visible={showUnlucky}/>
-            </div>
+            <Card>
+                <div className="answer-message">
+                    <CongratsMessage visible={showCongrats}/>
+                    <UnluckyMessage visible={showUnlucky}/>
+                </div>
+            </Card>
         </section>
     )
 }
