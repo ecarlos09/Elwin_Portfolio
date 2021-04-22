@@ -5,3 +5,25 @@
     justify-self: center;
     justify-content: space-around;
 }
+
+.intro {
+    margin-top: 7rem;
+}
+
+.intro-blurb {
+    width: 150vw;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .about {
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    #howdy {
+        width: 50vw;
+        justify-self: center;
+    }
+  }
