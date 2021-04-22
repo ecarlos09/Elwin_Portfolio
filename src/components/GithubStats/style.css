@@ -1,16 +1,13 @@
+.git-stats {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7rem;
+}
+
 .git-stats-content {
     display: flex;
     justify-content: space-around;
 }
-
-.git-stats {
-    display: flex;
-    flex-direction: column;
-}
-
-/* .git-stats-blurb p {
-    width: 70vw;
-} */
 
 .git-stats h2 {
     text-align: center;
