@@ -9,3 +9,4 @@ export { default as PlayerInfo } from './PlayerInfo';
 export { default as Statements } from './Statements';
 export { default as CongratsMessage } from './CongratsMessage';
 export { default as UnluckyMessage } from './UnluckyMessage';
+export { default as Thanks } from './Thanks';
