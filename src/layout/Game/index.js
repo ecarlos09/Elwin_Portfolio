@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 
 import './style.css';
 
@@ -6,7 +7,7 @@ import { PlayIcon, PlayerInfo, Statements } from '../../components'
 
 const Game = () => {
     return (
-        <>
+        <Container className="game" fluid>
             <h2>Two Truths and a Lie</h2>
 
             <p>
@@ -26,7 +27,7 @@ const Game = () => {
                 <PlayerInfo />
                 <Statements />
             </div>
-        </>
+        </Container>
     )
 }
 
