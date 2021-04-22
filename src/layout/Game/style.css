@@ -2,5 +2,10 @@
     justify-content: center;
     background-color: rgb(138, 43, 226, 0.7);
     border-radius: 10%;
+    border: 2px groove purple;
     text-align: center;
+}
+
+.game {
+    margin-top: 7rem;    
 }
