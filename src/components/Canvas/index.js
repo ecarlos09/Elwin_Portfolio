@@ -1,6 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 
-import { useWindowSize } from '../../hooks'
+import { Container } from 'react-bootstrap';
+
+import { useWindowSize } from '../../hooks';
 
 const Canvas = () => {
 
@@ -39,8 +41,10 @@ const Canvas = () => {
     }, [draw])
 
     return (
-        <canvas id="my-canvas" width={useWindowSize().width} height={useWindowSize().height} ref={canvasRef} style={{borderRadius: "2%"}}>
-        </canvas>
+        <Container fluid>
+            <canvas id="my-canvas" width={useWindowSize().width} height={useWindowSize().height} ref={canvasRef} style={{borderRadius: "2%"}}>
+            </canvas>
+        </Container>
     )
 }
 
