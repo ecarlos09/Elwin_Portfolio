@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 
 import consoulLogLanding from '../../assets/consoul-log-landing.jpg';
 import consoulLogFeed from '../../assets/consoul-log-feed.jpg';
@@ -9,7 +10,7 @@ import './style.css';
 
 const ProjectInfo = () => {
     return (
-        <section className="projects">
+        <Container className="projects">
             <div id="project-1">
                 <div className="project-img">
                     <img src={consoulLogLanding} alt="Landing page for consoul.log"/>
@@ -55,7 +56,7 @@ const ProjectInfo = () => {
                     </a>
                 </div>
             </div>        
-        </section>
+        </Container>
     )
 }
 
