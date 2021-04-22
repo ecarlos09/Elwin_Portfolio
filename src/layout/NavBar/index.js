@@ -1,10 +1,12 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Container }  from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Container }  from 'react-bootstrap';
 import './style.css';
 
 const NavBar = ({ handleStart, handleSkills, handleGame, handleContact }) => {
+    const history = useHistory();
+
     return (
         <section className="nav">
             <Container fluid>
