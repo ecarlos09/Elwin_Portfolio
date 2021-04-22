@@ -1,8 +1,10 @@
 import React from 'react';
 
+import { Container } from 'react-bootstrap';
+
 const Intro = () => {
     return (
-        <section className="intro-blurb">
+        <Container className="intro-blurb">
             <p>
                 Hi there!  My name is Elwin and I am a keen coder and problem solver. 
                 I am passionate about learning new things, embracing fresh challenges and using my skills to improve the lives of other people. 
@@ -23,7 +25,7 @@ const Intro = () => {
             <p>
                 Read on to find out more about my skill set.  There's also a little game for you to play at the end ...
             </p>
-        </section>
+        </Container>
     )
 }
 
