@@ -7,7 +7,6 @@ const Projects = () => {
     return (
         <>
             <NavBar />
-            <h1>Check out some of my most recent work!</h1>
             <ProjectInfo />
         </>
     )

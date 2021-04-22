@@ -11,6 +11,7 @@ import './style.css';
 const ProjectInfo = () => {
     return (
         <Container className="projects">
+            <h1>Check out some of my most recent work!</h1>
             <div id="project-1">
                 <div className="project-img">
                     <img src={consoulLogLanding} alt="Landing page for consoul.log"/>
