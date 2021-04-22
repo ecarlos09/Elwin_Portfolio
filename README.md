@@ -7,3 +7,7 @@ https://elwin-portfolio.netlify.app/
 ## Update 15.04.2021
 
 I am currently in the process of converting this vanilla site into a REACT app ... significant changes will be deployed and commented on in this README.  Stay tuned!
+
+## Update 22.04.2021
+
+Major style update has now been implemented!  Now in the process of adding responsiveness for mobile devices.
