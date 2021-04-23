@@ -21,9 +21,4 @@
       flex-direction: column;
       justify-content: center;
     }
-    
-    #howdy {
-        width: 50vw;
-        justify-self: center;
-    }
-  }
+}
