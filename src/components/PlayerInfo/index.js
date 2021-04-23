@@ -21,7 +21,7 @@ const PlayerInfo = () => {
  
     return (
         <section className="player-name">
-            <h3>Hi there, { player }!</h3>
+            <h4>Hi there, { player }!</h4>
             <form onSubmit={handleNameSubmit}>
                 <label htmlFor="username">Not your name?</label>
                 <input type="text" id="username" name="username" placeholder="Tell us" value={nameInput} onChange={handleInput} />
@@ -32,20 +32,3 @@ const PlayerInfo = () => {
 }
 
 export default PlayerInfo;
-
-   // const handleInput = e => {
-    //     const { key, value } = e.target;
-    //     setFormData({...formData, [key]: value });
-    // }
-
-    // const handleNameSubmit = e => {
-    //     e.preventDefault();
-    //     setPlayer(formData.username);
-    //     setFormData({username: ""});
-    // }
-
-    // const handleInput = e => {
-    //     e.preventDefault();
-    //     const newPlayerName = dispatch(addName(e).players)
-    //     setNameInput(newPlayerName);
-    // };
