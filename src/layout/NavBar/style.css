@@ -1,10 +1,10 @@
 nav {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     position: fixed;
-    top: 0;
+    top: 0; */
     justify-self: center;
-    width: 100vw;
+    /* width: 100vw; */
     background-color: rgb(255, 192, 203, 0.7);
     -webkit-backdrop-filter: blur(15px);
 	backdrop-filter: blur(15px);
