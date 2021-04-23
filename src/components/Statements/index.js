@@ -7,7 +7,7 @@ import './style.css';
 const Statements = () => {
     const [statements, setStatements] = useState([
         {id: 1, statement: "I have seven older siblings.", correct: true },
-        {id: 2, statement: "The most recent snooker cue I purchased was more expensive than my current mobile phone.", correct: false },
+        {id: 2, statement: "I lost at chess to a 10 year old ... and I was trying.", correct: false },
         {id: 3, statement: "I once performed live on the X Factor.", correct: false }
     ]);
 
@@ -26,36 +26,24 @@ const Statements = () => {
 
     return (
         <section className="statements" >
-            <Card className="game">
                 <form id="statements-list">
-                    <Card>
-                        <Card.Body>
-                            <input id="statementOne" type="radio" name="statementList" onClick={handleCongrats} />
-                            <label htmlFor="statementOne">{statements[0].statement}</label>
-                        </Card.Body>
-                    </Card>
-
-                    <Card>
-                        <Card.Body>
-                            <input id="statementTwo" type="radio" name="statementList" onClick={handleUnlucky} />
-                            <label htmlFor="statementTwo">{statements[1].statement}</label>
-                        </Card.Body>
-                    </Card>
-
-                    <Card>
-                        <Card.Body>
-                            <input id="statementThree" type="radio" name="statementList" onClick={handleUnlucky} />
-                            <label htmlFor="statementThree">{statements[2].statement}</label>
-                        </Card.Body>
-                    </Card>
-                </form>
-                <Card>
-                    <div className="answer-message">
-                        <CongratsMessage visible={showCongrats}/>
-                        <UnluckyMessage visible={showUnlucky}/>
+                    <div className="s1">
+                        <input id="statementOne" type="radio" name="statementList" onClick={handleCongrats} />
+                        <label htmlFor="statementOne">{statements[0].statement}</label>
                     </div>
-                </Card>
-            </Card>
+                    <div className="s2">
+                        <input id="statementTwo" type="radio" name="statementList" onClick={handleUnlucky} />
+                        <label htmlFor="statementTwo">{statements[1].statement}</label>
+                    </div>
+                    <div className="s3">
+                        <input id="statementThree" type="radio" name="statementList" onClick={handleUnlucky} />
+                        <label htmlFor="statementThree">{statements[2].statement}</label>
+                    </div>
+                </form>
+                <div className="answer-message">
+                    <CongratsMessage visible={showCongrats}/>
+                    <UnluckyMessage visible={showUnlucky}/>
+                </div>
         </section>
     )
 }
