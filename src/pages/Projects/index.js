@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { NavBar } from '../../layout';
+import { ProjectNavBar } from '../../layout';
 import { ProjectInfo } from '../../components';
 
 const Projects = () => {
     return (
         <>
-            <NavBar />
+            <ProjectNavBar />
             <ProjectInfo />
         </>
     )
