@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 
 import './style.css';
 
-import { PlayIcon, PlayerInfo, Statements } from '../../components'
+import { PlayIcon } from '../../components'
 
 const Game = () => {
     return (
@@ -20,8 +20,6 @@ const Game = () => {
 
             <div className="game-content" >
                 <PlayIcon />
-                <PlayerInfo />
-                <Statements />
             </div>
         </Container>
     )
