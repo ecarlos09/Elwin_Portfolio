@@ -1,0 +1,23 @@
+.lets-play {
+    border-radius: 25%;
+    border: dashed, purple;
+}
+
+.player-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.game-intro {
+    display: flex;
+    justify-content: center;
+}
+
+#howdy-img {
+    width: 20%;
+    margin-bottom: 1rem;
+}
+
+.lets-play h3 {
+    margin-bottom: 2rem;
+}

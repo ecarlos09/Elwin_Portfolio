@@ -1,10 +1,19 @@
 import React from 'react';
 
+import { Container } from 'react-bootstrap';
+import { Intro } from '..';
+
 import './style.css';
 
 const Howdy = () => {
     return (
-        <img id="howdy-img" src="https://i.imgur.com/WGS6L73.jpg" alt="Willy Wonka costume" />
+        <Container className="howdy">
+            <Container fluid className="title">
+                <p id="mob-note">N.B.  We are in the process of making this more mobile friendly! </p>
+                <h1>Howdy!</h1>
+            </Container>
+            <Intro />
+        </Container>
     )
 }
 

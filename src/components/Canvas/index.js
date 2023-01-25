@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 
-import { useWindowSize } from '../../hooks'
+import { useWindowSize } from '../../hooks';
 
 const Canvas = () => {
 
@@ -10,8 +10,8 @@ const Canvas = () => {
     const draw = (ctx, c, frameCount) => {
         // Define grid
         const grd = ctx.createLinearGradient(0, 0, Math.sin(frameCount*0.05)*c.width, (1-Math.sin(frameCount*0.05))*c.height);
-        grd.addColorStop(0, "rgb(255,255,153)");
-        grd.addColorStop(1, "pink");
+        grd.addColorStop(0, "#d9dce7");
+        grd.addColorStop(1, "#c18ed3");
         // Fill gradient
         ctx.fillStyle = grd;
         ctx.fillRect(0, 0, c.width, c.height);
@@ -39,8 +39,8 @@ const Canvas = () => {
     }, [draw])
 
     return (
-        <canvas id="my-canvas" width={useWindowSize().width} height={useWindowSize().height} ref={canvasRef}>
-        </canvas>
+            <canvas id="my-canvas" width={useWindowSize().width} height={useWindowSize().height} ref={canvasRef} style={{borderRadius: "2%"}}>
+            </canvas>
     )
 }
 

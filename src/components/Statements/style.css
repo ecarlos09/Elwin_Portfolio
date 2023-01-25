@@ -1,0 +1,26 @@
+.game-intro {
+    display: flex;
+    justify-content: center;
+}
+
+.statements {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 2rem;
+}
+
+.statements .game {
+    width: 80%;
+    align-self: center;
+}
+
+.statements-list {
+    margin-top: 2rem;
+}
+
+.s1, .s2, .s3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

@@ -1,0 +1,11 @@
+.game-content {
+    justify-content: center;
+    background-color: rgb(232, 206, 248, 0.7);
+    border-radius: 10%;
+    border: 2px groove purple;
+    text-align: center;
+}
+
+.game {
+    margin-top: 7rem;    
+}

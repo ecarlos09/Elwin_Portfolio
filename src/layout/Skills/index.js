@@ -1,13 +1,14 @@
 import React from 'react';
 
+import { Container } from 'react-bootstrap'
+
 import { GithubStats } from '../../components'
 
 const Skills = () => {
     return (
-        <>
-            <h2>Technical Skills</h2>
+        <Container fluid>
             <GithubStats />
-        </>
+        </Container>
     )
 }
 

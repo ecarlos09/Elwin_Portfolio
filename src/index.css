@@ -1,0 +1,24 @@
+body {
+    width: 100vw;
+    background-color: #d9dce7; /* Hex code for disney blue */
+    color: #3c4be2;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'RocknRoll One', sans-serif; /* Set default font style for body */
+}
+
+h1, h2 {
+    text-align: center;
+    font-size: 60px; /* Ensure main title is significantly larger than remainder of text */
+    font-family: 'Nerko One', cursive; /* Use imported Goggle font for header, with a default style included in case browser does not support it */
+    color: rgb(139,0,139); /* rgb code for a shade of purple, can't remember which one! */
+}
+
+h3 {
+    text-align: center;
+}
+
+#mob-note {
+    text-align: center;
+    color: purple;
+}
